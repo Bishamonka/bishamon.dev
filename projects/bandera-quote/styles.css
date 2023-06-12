@@ -1,5 +1,10 @@
+/* HEADER */
+
 .header {
-    background-color: #121212;
+    position: absolute;
+    width: 100vw;
+    background-color: rgba(19, 19, 19, 0.75);
+    height: 64px;
 }
 
 #logo {
@@ -7,7 +12,7 @@
 }
 
 #ua-flag-icon {
-    width: 6px;
+    height: 64px;
     margin-right: 16px;
 }
 
@@ -22,10 +27,12 @@
 
 /* INTRO */
 
-
 .hero-image {
-    background-color: #222222;
-    height: 160px;
+    background: #171717;
+    background-image: url("../../images/yuriy-kleymenov-8FWXLFfmsv8-unsplash\ 2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 224px;
 }
 
 .persona-image {
@@ -55,11 +62,19 @@
     margin-bottom: 20%;
 }
 
+.custom-dark-btn {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #222222;
+    color: #ffffff;
+}
+
 @media (max-width: 640px) {
 
     .hero-image {
         background-color: #394047;
-        height: 120px;
+        height: 224px;
     }
 
     .persona-image {
