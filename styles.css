@@ -1,0 +1,74 @@
+/* BODY */
+
+body {
+    background-color: #171717;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #121212;
+}
+
+#logo {
+    font-size: 1.2rem;
+}
+
+#ua-flag-icon {
+    width: 6px;
+    margin-right: 16px;
+}
+
+.donation-btn {
+    color: #888888;
+    transition: 200ms;
+}
+.donation-btn:hover {
+    color: #ffffff;
+    transition: 200ms;
+}
+
+
+/* INTRO */
+
+.intro {
+    margin-top: 180px;
+}
+
+.intro-subheader {
+    margin: 24px 0;
+}
+
+.main-intro-caption {
+    color: #888888;
+}
+
+
+/* SOCIAL LINKS */
+
+.social-links {
+    margin: 48px 0;
+}
+
+.main-page-social-icon {
+    margin: 0 12px;
+}
+
+
+/* PROJECTS */
+
+.projects_item {
+    padding: 80px 0 ;
+}
+
+.caption {
+    color:#888888;
+    font-size: 12px;
+}
+
+/* FOOTER */
+
+.footnote {
+    color: #888888;
+    font-size: 12px;
+}

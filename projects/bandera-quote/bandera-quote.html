@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" charset="utf-8">
+        <title>Bandera Quote</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      
+        <!-- CSS Stylesheets -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+      
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/43124feaf5.js" crossorigin="anonymous"></script>
+      
+        <!-- Bootstrap Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+
+        <!-- PyScript -->
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+      </head>
+
+      <body>
+
+        <header class="header">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                    <div>
+                        <img src="../../images/ua-strip-flag.svg" id="ua-flag-icon">
+                        <a href="../../index.html" class="text-white text-decoration-none">bishamon.dev</a>
+                    </div>
+                    <a id="" target="_blank" href="https://bank.gov.ua/ua/about/support-the-armed-forces" class="text-decoration-none donation-btn">Підтримати ЗСУ</a>
+                </div>
+            </div>
+            
+        </header>
+
+        <div class="hero-image"></div>
+
+        <div id="viewport" class="container">
+            <div class="persona-info d-flex flex-wrap align-items-center justify-content-center">
+                <div class="text-center col-12">
+                    <img src="images/bandera.jpg" class="persona-image">
+                </div>
+                <div class="text-center">
+                    <h3><strong>Степан Бандера</strong></h3>
+                <p class="persona-caption">Український політичний діяч, революціонер, один із ідеологів, практиків і теоретиків українського націоналістичного руху XX століття, голова Проводу ОУН-Б</p>
+                </div>
+            </div>  
+            <div class="text-center col-lg-8 mx-auto">
+                <i class="fas fa-quote-right fa-2xl"></i>
+                
+                <py-config>
+                    [[fetch]]
+                    files = ["quotes.json"]
+                </py-config>
+
+                <py-script>
+                    
+                    import random
+                    import json
+                    
+                    with open("quotes.json") as data:
+                        json = json.load(data)
+                    quotes = json['quotes_list']
+                    
+                    old_index = 0
+                    index = random.randint(0, len(quotes)-1)
+                    
+                    
+                    def get_new_quote():
+                        qt_text = Element("qt-text")
+                        qt_caption = Element("qt-caption")
+                    
+                        index = random.randint(0, len(quotes) - 1)
+                    
+                        qt_text.write(quotes[index]['quote'])
+                        qt_caption.write(quotes[index]['source'])
+
+                </py-script>
+
+                <p id="qt-text" class="quote-text">Без власної держави, без визволення, отже і без визвольної боротьби, Україна не може мати ані свободи, ані добробуту, ані якої-небудь тіні демократії.</p> 
+                <p id="qt-caption" class="quote-caption">— «Українська національна революція, а не тільки протирежимний резистанс» (1950)</p>
+                <button py-click="get_new_quote()" id="btn-next-quote" class="btn btn-dark">Ще Цитату</button>
+            </div>              
+        </div>
+
+        <footer>
+
+            <div class="container">
+              <!-- div -->
+            </div>
+
+        </footer>
+
+      </body>
+</html>

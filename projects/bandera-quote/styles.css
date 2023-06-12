@@ -1,0 +1,81 @@
+.header {
+    background-color: #121212;
+}
+
+#logo {
+    font-size: 1.2rem;
+}
+
+#ua-flag-icon {
+    width: 6px;
+    margin-right: 16px;
+}
+
+.donation-btn {
+    color: #888888;
+    transition: 200ms;
+}
+.donation-btn:hover {
+    color: #ffffff;
+    transition: 200ms;
+}
+
+/* INTRO */
+
+
+.hero-image {
+    background-color: #222222;
+    height: 160px;
+}
+
+.persona-image {
+    border-radius: 100%;
+    width: 200px;
+    margin: -100px auto 16px;
+}
+
+.persona-caption {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 8px 23%;
+}
+
+.quote-text {
+    font-size: 1.4rem;
+    margin: 16px auto;
+}
+
+.quote-caption {
+    font-size: 0.9rem;
+    color: #888888;
+    margin-bottom: 24px;
+}
+
+#btn-next-quote {
+    margin-bottom: 20%;
+}
+
+@media (max-width: 640px) {
+
+    .hero-image {
+        background-color: #394047;
+        height: 120px;
+    }
+
+    .persona-image {
+        width: 200px;
+        margin: -100px auto 16px;
+    }
+
+    .persona-caption {
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 8px 24px;
+    }
+
+    .quote-text {
+        font-size: 1.2rem;
+        margin: 16px auto;
+    }
+
+}
