@@ -4,7 +4,7 @@ body {
     width: 100vw;
     height: 100vh;
     background: #171717;
-    background-image: url("images/black-sand.jpg"); /* fallback */
+    background-image: url("images/black-sand.jpg");
     background-image: linear-gradient(90deg, rgba(23, 23, 23, 1), rgba(23, 23, 23, 0)), url("images/black-sand.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,7 +39,7 @@ body {
 /* MAIN SECTION */
 
 .home-main-section {
-    height: 80vh;
+    height: 90vh;
 }
 
 /* INTRO */
@@ -77,11 +77,6 @@ body {
     border-radius: 12px;
     background-color: #222222;
     color: #ffffff;
-}
-
-
-.projects_item {
-    
 }
 
 .caption {
