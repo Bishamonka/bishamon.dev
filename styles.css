@@ -10,6 +10,7 @@ body {
     background-size: cover;
 }
 
+
 /* HEADER */
 
 .header {
@@ -41,12 +42,6 @@ body {
 .home-main-section {
     height: 90vh;
 }
-
-/* INTRO */
-
-/* .intro {
-    margin-top: 300px;
-} */
 
 .main-intro-caption {
     color: rgba(255, 255, 255, 0.66);
@@ -83,6 +78,7 @@ body {
     color:#888888;
     font-size: 12px;
 }
+
 
 /* FOOTER */
 
