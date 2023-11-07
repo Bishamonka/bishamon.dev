@@ -10,6 +10,7 @@ body {
     background-size: cover;
 }
 
+
 /* HEADER */
 
 .header {
@@ -42,12 +43,6 @@ body {
     height: 80vh;
 }
 
-/* INTRO */
-
-/* .intro {
-    margin-top: 300px;
-} */
-
 .main-intro-caption {
     color: rgba(255, 255, 255, 0.66);
     margin-top: 32px;
@@ -79,15 +74,11 @@ body {
     color: #ffffff;
 }
 
-
-.projects_item {
-    
-}
-
 .caption {
     color:#888888;
     font-size: 12px;
 }
+
 
 /* FOOTER */
 
